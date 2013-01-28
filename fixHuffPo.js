@@ -27,7 +27,7 @@
 									var title = result.match(/<h1 class="title-(?:news|blog)">\n?\s*(.*?)\n?\s*<\/h1>/);
 									if(title !== null) {
 										//console.log(title[1]);
-										a.innerText = title[1];
+										a.innerHtml = title[1];
 									} else {
 										//console.log('no title found:',result);
 									}
